@@ -1,22 +1,58 @@
 aid: valence
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/valence.png
 name: Valence
-description: Valence is a company surfaced as a portfolio company of 500-global, bessemer-venture-partners,
-  y-combinator and added to the API Evangelist network as a stub for enrichment. This profile is a lead
-  awaiting the enrichment pipeline.
+description: Valence (Valence OS) is an early-stage mental-healthcare company backed
+  by 500 Global, building continuous care that bridges the gap between therapy sessions.
+  Its site describes an evidence-based system grounded in peer-reviewed research on
+  mental-health trends, attrition factors, between-session care, and AI-augmented
+  clinical support. Valence publishes no developer portal, API documentation, or
+  machine-readable API artifacts as of July 2026.
 url: https://raw.githubusercontent.com/api-evangelist/valence/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - 500-global
-- bessemer-venture-partners
-- y-combinator
+x-name-collision:
+  note: The original stub conflated three distinct companies named Valence. This
+    profile is the 500 Global portfolio company at werevalence.com. The other two
+    are separate companies and are not this record.
+  others:
+  - backer: bessemer-venture-partners
+    name: Valence
+    url: https://www.valence.co/
+    what: AI leadership coaching (Nadia)
+  - backer: y-combinator
+    name: Valence
+    url: https://valence.trade
+    what: Unified prediction-markets trading platform
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Mental Health
+- Healthcare
+- Therapy
+- Artificial Intelligence
+- Clinical Support
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -26,3 +62,13 @@ maintainers:
 common:
 - type: Website
   url: https://werevalence.com
+- type: GitHubOrganization
+  url: https://github.com/werevalence
+- type: LinkedIn
+  url: https://www.linkedin.com/company/werevalenve/
+- type: Instagram
+  url: https://www.instagram.com/werevalence
+- type: DomainSecurity
+  url: security/valence-domain-security.yml
+- type: LLMsTxt
+  url: llms/valence-llms.txt
